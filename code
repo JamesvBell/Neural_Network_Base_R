@@ -1,0 +1,12 @@
+#First Neural Network
+install.packages(nnet)
+Set.seed(123)
+library(nnet)
+
+# run above and see the result!
+
+#now let's look make some predictions
+
+table(iris$Species, predict(iris.nn, iris, type =  "class"))
+
+#we get a confusion matrix as a result. 
